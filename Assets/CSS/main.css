@@ -2,9 +2,10 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  border: 2px solid black;
 }
 
-nav {
+.navbar {
   position: fixed !important;
   top: 0;
   left: 0;
@@ -15,6 +16,18 @@ nav {
   font-size: 18px;
   width: 100%;
   background-color: #ffffff;
+}
+@media (max-width: 390px) {
+  .navbar {
+    width: 80%;
+    top: 10px;
+    left: 5px;
+  }
+}
+@media (min-width: 391px) and (max-width: 780px) {
+  nav {
+    width: 100%;
+  }
 }
 #active {
   position: relative;
@@ -143,6 +156,9 @@ nav {
   .start {
     text-align: center;
   }
+  /* #shokran {
+    width: 80% !important;
+  } */
 }
 #description {
   font-size: 25px !important;
